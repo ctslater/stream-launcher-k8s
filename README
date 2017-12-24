@@ -1,0 +1,7 @@
+
+Kubernetes configuration files for kafka+zookeeper+stream management interface.
+
+Kafka and Zookeeper files are modified versions from the Kubernetes contrib
+repo, reconfigured to run only a single instance of each to support single-node
+testing.
+
