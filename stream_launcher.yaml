@@ -37,4 +37,11 @@ spec:
         ports:
         - containerPort: 8000
           name: server
+        volumeMounts:
+        - name: datadir
+          mountPath: /opt/pod_specs
       serviceAccount: launcher-account
+      volumes:
+      - name: datadir
+        hostPath:
+          path: /home/centos/stream-launcher-k8s/alert_stream
